@@ -1,55 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
   <title>Our Team</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.5;
+    }
+    
+    h1 {
+      margin-top: 120px;
+      text-align: center;
+    }
+
+    /* Grid layout: 2 rows, 2 columns */
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    /* Member block */
+    .team-member {
+      overflow: hidden;
+    }
+
+    .team-member img {
+      float: left;
+      margin: 10px 20px 10px 0;
+      width: 100px;
+      height: 100px;
+    }
+
+    .position-title {
+      font-weight: bold;
+    }
+
+    .position-title em {
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a class="active" href="#">Staff</a></li>
-    </ul>
-  </nav>
-
-  <div class="banner">Example of 4.1 Assignment: Team Page</div>
-
+  <!-- Page Title -->
   <h1>Our Team</h1>
 
-  <div class="team-member">
-    <img src="bob.png" alt="Bob Bigbucks">
-    <div class="bio">
-      <strong>Bob Bigbucks, <em>President and CEO</em></strong>
-      <p>Bob has years of experience in finance and logistics. He once served time for extortion and holds degrees in Art History and Business Management. He's consulted for Amazon and Sparky's Bail Bonds.</p>
-    </div>
-  </div>
+  <!-- Team Grid -->
+  <div class="team-grid">
 
-  <div class="team-member">
-    <img src="fred.png" alt="Fred Persimmon">
-    <div class="bio">
-      <strong>Fred Persimmon, <em>Treasurer and CFO</em></strong>
-      <p>Fred started with a lemonade stand at age 8. A former fencing champion and graduate of Ohio State, he now develops creative finance strategies from Europe to central Ohio.</p>
+    <div class="team-member">
+      <div class="position-title">Bob Bigbucks, <em>President and CEO</em></div>
+      <img src="bob.png" alt="Bob Bigbucks">
+      <p>
+        Bob has years of experience in finance, logistics, and operations management. He also served a short stretch in prison for extortion. He has degrees in Art History, Business Management, and is trained as a master chef. He has brought his managerial expertise to many companies including Amazon, Ford Motor Company, and Sparky's Bail Bonds. He is originally from Omaha, Nebraska but is a life-long University of Michigan football fan.
+      </p>
     </div>
-  </div>
 
-  <div class="team-member">
-    <img src="susan.png" alt="Susan McGoodstuff">
-    <div class="bio">
-      <strong>Susan McGoodstuff, <em>Director of Information Technology</em></strong>
-      <p>Susan is a former Navy Seal and math prodigy. She's a two-time Fields Medal winner and understands every line of code written at the company — even the confusing ones.</p>
+    <div class="team-member">
+      <div class="position-title">Fred Persimmon, <em>Treasurer and CFO</em></div>
+      <img src="fred.png" alt="Fred Persimmon">
+      <p>
+        Fred discovered his fascination for all things financial when he opened his first lemonade stand at age 8. He parlayed that into a loan sharking business covering most of central Ohio by the time he entered college. After graduating from Ohio State University, where he was a captain of the fencing team and a national champion, Fred spent time in Europe refining his skills with innovative financial techniques.
+      </p>
     </div>
-  </div>
 
-  <div class="team-member">
-    <img src="deborah.png" alt="Deborah VanTango">
-    <div class="bio">
-      <strong>Deborah VanTango, <em>Chief of Human Resources</em></strong>
-      <p>Deborah lived in a New Mexico artist's colony and trained in Tibet for 15 years. She’s worked with PETA and Greenpeace, and owns 7 cats, 3 birds, and one iguana.</p>
+    <div class="team-member">
+      <div class="position-title">Susan McGoodstuff, <em>Director of Information Technology</em></div>
+      <img src="susan.png" alt="Susan McGoodstuff">
+      <p>
+        Susan began her professional career as a Navy Seal. Unfortunately she is unable to discuss most of her experience in the military, but we do know it is unwise to mention boa constrictors in her presence. She is also a two time winner of the Fields medal in mathematics although none of us can understand any of her work. She is the only one in the company who understands computers.
+      </p>
     </div>
+
+    <div class="team-member">
+      <div class="position-title">Deborah VanTango, <em>Chief of Human Resources</em></div>
+      <img src="deborah.png" alt="Deborah VanTango">
+      <p>
+        Deborah was born in an artist's colony in New Mexico. It was there she discovered her love for unicorns, kittens, and healing crystals. Rather than a traditional college education she joined a Tibetan temple for 15 years. Since then she has worked with Greenpeace, PETA, and the Nevada Gaming Commission. She is the proud owner of 7 cats, 3 birds, and an iguana.
+      </p>
+    </div>
+
   </div>
 
 </body>
