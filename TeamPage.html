@@ -5,13 +5,10 @@
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
-      line-height: 1.5;
     }
 
-    /* Fixed navigation bar */
     .navbar {
-      background-color: #333;
-      overflow: hidden;
+      background-color: #151512;
       position: fixed;
       top: 0;
       width: 100%;
@@ -38,7 +35,7 @@
 
     .navbar a:hover,
     .navbar .active {
-      background-color: #4CAF50;
+      background-color: #068ca9;
     }
 
     h1 {
@@ -46,19 +43,13 @@
       text-align: center;
     }
 
-    /* Grid layout: 2 rows, 2 columns */
     .team-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
     }
 
-    /* Member block */
-    .team-member {
-      overflow: hidden;
-    }
-
-    .team-member img {
+    .member img {
       float: left;
       margin: 10px 20px 10px 0;
       width: 100px;
@@ -82,7 +73,7 @@
       <li><a href="#">Home</a></li>
       <li><a href="#">News</a></li>
       <li><a href="#">Contact</a></li>
-      <li><a class="active" href="#">Staff</a></li>
+      <li><a class="active" href="#">Team</a></li>
     </ul>
   </nav>
 
@@ -92,7 +83,7 @@
   <!-- Team Grid -->
   <div class="team-grid">
 
-    <div class="team-member">
+    <div class="member">
       <div class="position-title">Bob Bigbucks, <em>President and CEO</em></div>
       <img src="bob.png" alt="Bob Bigbucks">
       <p>
@@ -100,7 +91,7 @@
       </p>
     </div>
 
-    <div class="team-member">
+    <div class="member">
       <div class="position-title">Fred Persimmon, <em>Treasurer and CFO</em></div>
       <img src="fred.png" alt="Fred Persimmon">
       <p>
@@ -108,7 +99,7 @@
       </p>
     </div>
 
-    <div class="team-member">
+    <div class="member">
       <div class="position-title">Susan McGoodstuff, <em>Director of Information Technology</em></div>
       <img src="susan.png" alt="Susan McGoodstuff">
       <p>
@@ -116,14 +107,13 @@
       </p>
     </div>
 
-    <div class="team-member">
+    <div class="member">
       <div class="position-title">Deborah VanTango, <em>Chief of Human Resources</em></div>
       <img src="deborah.png" alt="Deborah VanTango">
       <p>
         Deborah was born in an artist's colony in New Mexico. It was there she discovered her love for unicorns, kittens, and healing crystals. Rather than a traditional college education she joined a Tibetan temple for 15 years. Since then she has worked with Greenpeace, PETA, and the Nevada Gaming Commission. She is the proud owner of 7 cats, 3 birds, and an iguana.
       </p>
     </div>
-
   </div>
 
 </body>
