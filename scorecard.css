@@ -1,0 +1,50 @@
+/* scorecard.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f8fa;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto 40px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f6fb;
+}
+
+/* Pseudo-class: highlight the row when hovering */
+tbody tr:hover {
+  background-color: #d1e7ff;
+  cursor: pointer;
+}
+
+/* Highlight the first column for team/player names */
+td:first-child, th:first-child {
+  background-color: #ecf0f1;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 15px;
+}
