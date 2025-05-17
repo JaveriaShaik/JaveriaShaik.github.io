@@ -39,7 +39,8 @@ body {
 h1 {
   text-align: center;
   color: #2c3e50;
-  margin-bottom: 90px;
+  margin-top: 90px;
+  margin-bottom: 10px;
 }
 
 table {
