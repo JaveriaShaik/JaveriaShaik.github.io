@@ -67,6 +67,7 @@ tr:nth-child(even) {
 /* Pseudo-class: highlight the row when hovering */
 tbody tr:hover {
   background-color: #d1e7ff;
+  cursor: pointer;
 }
 
 /* Highlight the first column for names */
