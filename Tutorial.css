@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffe6e6;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #174778;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+.step img {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.example {
+    padding: 20px;
+    background-color: #eaf7ff;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}
