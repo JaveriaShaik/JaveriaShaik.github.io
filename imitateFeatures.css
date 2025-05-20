@@ -40,7 +40,7 @@ body {
 }
 
 .dinosaur {
-  background-image: url('images/dinosaur.png') no-repeat;
+  background-image: url('images/dinosaur.png');
   background-size: contain;
   filter: hue-rotate(165deg);
 }
