@@ -1,0 +1,67 @@
+body {
+  background: #eee;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.penguins {
+  background-image: url('images/penguins.jpg');\
+  filter: grayscale(25%) brightness(200%);
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.football-field {
+  background-image: url('images/football_field.jpg');
+  filter: grayscale(100%);
+  border: solid 55px #000000;
+  border-image: url('images/tic-tac-toe.png') 55 round;
+}
+
+.dinosaur {
+  background-image: url('images/dinosaur.png');
+  filter: hue-rotate(185deg);;
+}
+
+.seagull {
+  background: linear-gradient(90deg,#9bc1f3 0%, #f3f5f6 80%);
+  background-image: url('images/seagull.png');
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+}
+
+.butterfly {
+  background-image: url('images/butterfly.jpg');
+  filter: invert(100%);
+  border-radius: 113px 1px 94px 1px;
+}
+
+.theater {
+  background-image: url('images/theater_stage.jpg');
+  background-filter: brightness(80%) blur(3px);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+}
