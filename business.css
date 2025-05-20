@@ -117,21 +117,26 @@ nav a.active {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px;
-  margin-top: 16px;
+  gap: 1em;
+  margin-top: 1em;
 }
 
 .gallery-grid img {
   width: 100%;
-  border-radius: 8px;
+  height: 200px;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .menu {
-  background-image: url('images/menuBackG.jpeg') center/cover no-repeat;
-  text-align: center; 
+  background-image: url('images/menuBackG.jpeg');
+  background-size: cover;
+  background-position: center;  
+  background-repeat: no-repeat; 
+  text-align: center;
+  padding: 48px 16px;
+  color: #fff;
 }
-
 footer {
   background: #333;
   color: #eee;
