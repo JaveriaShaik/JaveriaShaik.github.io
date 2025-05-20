@@ -26,7 +26,7 @@ body {
 
 .penguins {
   background-image: url('images/penguins.jpg');\
-  filter: grayscale(15%) brightness(170%);
+  filter: grayscale(25%) brightness(200%);
   border: 5px solid white;
   border-radius: 50%;
   padding: 0;
@@ -35,26 +35,24 @@ body {
 .football-field {
   background-image: url('images/football_field.jpg');
   filter: grayscale(100%);
-}
-.tic-tac-toe {
   border: solid 55px #000000;
-  border-image: url('images/tic-tac-toe.png') 60 round;
+  border-image: url('images/tic-tac-toe.png') 55 round;
 }
 
 .dinosaur {
   background-image: url('images/dinosaur.png');
-  filter: hue-rotate(179deg);;
+  filter: hue-rotate(185deg);;
 }
 
 .seagull {
+  background: linear-gradient(90deg,#9bc1f3 0%, #f3f5f6 80%);
   background-image: url('images/seagull.png');
-  filter: brightness(110%);
   box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
 }
 
 .butterfly {
   background-image: url('images/butterfly.jpg');
-  filter: invert(86%) brigthness(110%);
+  filter: invert(100%);
   border-radius: 113px 1px 94px 1px;
 }
 
