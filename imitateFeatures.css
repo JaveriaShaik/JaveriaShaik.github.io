@@ -17,22 +17,24 @@ body {
   height: 200px;
   background-size: cover;
   background-position: center;
-  border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .penguins {
   background-image: url('images/penguins.jpg');
   border: 5px solid white;
   border-radius: 50%;
-  padding: 20px;
+  padding: 0;
 }
 
 .football-field {
   background-image: url('images/football_field.jpg');
   background-blend-mode: multiply;
   filter: grayscale(100%);
-  position: relative;
 }
 .football-field::after {
   content: '';
@@ -52,8 +54,8 @@ body {
 
 .seagull {
   background-image: url('images/seagull.png');
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
   transform: rotate(-5deg);
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
 }
 
 .butterfly {
@@ -65,10 +67,9 @@ body {
 .theater {
   background-image: url('images/theater_stage.jpg');
   filter: brightness(80%);
-  text-align: center;
   color: white;
   font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
 }
