@@ -42,7 +42,7 @@ body {
 .dinosaur {
   background-image: url('images/dinosaur.png');
   background-size: contain;
-  filter: hue-rotate(185deg);
+  filter: hue-rotate(127deg);
 }
 
 .seagull {
