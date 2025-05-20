@@ -41,19 +41,19 @@ nav a.active {
   color: #a65f3f;
 }
 
-.hero {
-  background: url('') center/cover no-repeat;
-  padding: 4em 0;
+.headline {
+  background: url('images/coffeeCup.jpeg') center/cover no-repeat;
+  padding: 64px 0;
   color: #fff;
   text-align: center;
 }
 
-.hero h1 {
+.headline h1 {
   font-size: 48px;
   margin-bottom: 8px;
 }
 
-.hero p {
+.headline p {
   font-size: 20px;
   margin-bottom: 16px;
 }
