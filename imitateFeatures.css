@@ -25,7 +25,8 @@ body {
 }
 
 .penguins {
-  background-image: url('images/penguins.jpg');
+  background-image: url('images/penguins.jpg');\
+  filter: grayscale(15%) brightness(170%);
   border: 5px solid white;
   border-radius: 50%;
   padding: 0;
@@ -33,17 +34,16 @@ body {
 
 .football-field {
   background-image: url('images/football_field.jpg');
-  background-blend-mode: multiply;
   filter: grayscale(100%);
 }
 .tic-tac-toe {
   border: solid 55px #000000;
-  border-image: url('images/tic-tac-toe.png') 55 round;
+  border-image: url('images/tic-tac-toe.png') 60 round;
 }
 
 .dinosaur {
   background-image: url('images/dinosaur.png');
-  filter: hue-rotate(240deg) saturate(200%);
+  filter: hue-rotate(213deg) saturate(155%);
 }
 
 .seagull {
@@ -53,7 +53,7 @@ body {
 
 .butterfly {
   background-image: url('images/butterfly.jpg');
-  filter: hue-rotate(160deg) saturate(250%) brigthness(110%);
+  filter: hue-rotate(213deg) saturate(155%) brigthness(110%);
   border-radius: 113px 1px 94px 1px;
   -webkit-border-radius: 113px 1px 94px 1px;
   -moz-border-radius: 113px 1px 94px 1px;
@@ -61,15 +61,10 @@ body {
 
 .theater {
   background-image: url('images/theater_stage.jpg');
-  filter: brightness(80%);
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
+  background-filter: brightness(80%) blur(2px);
   color: white;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
   text-align: center;
-  vertical-align: bottom;
- 
 }
