@@ -1,6 +1,5 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
   background-color: #fdfcf9;
   color: #333;
 }
@@ -17,25 +16,24 @@ ul {
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  padding: 1em 0;
+  padding: 16px 0;
 }
 
 header {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-  padding: 1em 0;
+  padding: 16px 0;
 }
 
 nav ul {
   display: flex;
-  gap: 1.5em;
+  gap: 24px;
   justify-content: flex-end;
   align-items: center;
 }
 
 nav a {
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 nav a:hover,
@@ -51,19 +49,19 @@ nav a.active {
 }
 
 .hero h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
+  font-size: 48px;
+  margin-bottom: 8px;
 }
 
 .hero p {
-  font-size: 1.25em;
-  margin-bottom: 1em;
+  font-size: 20px;
+  margin-bottom: 16px;
 }
 
 .btn {
   background: #a65f3f;
   color: white;
-  padding: 0.75em 1.5em;
+  padding: 12px 24px;
   border-radius: 4px;
   font-weight: bold;
 }
@@ -76,8 +74,8 @@ nav a.active {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2em;
-  margin: 3em 0;
+  gap: 32px;
+  margin: 48px 0;
 }
 
 .about-preview img {
@@ -91,10 +89,10 @@ nav a.active {
 
 .btn-small {
   display: inline-block;
-  margin-top: 1em;
+  margin-top: 16px;
   color: #fff;
   background: #5a3825;
-  padding: 0.5em 1em;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 
@@ -104,23 +102,23 @@ nav a.active {
 
 .events-preview {
   background: #f6f3ef;
-  padding: 2em 0;
-  margin-bottom: 2em;
+  padding: 32px 0;
+  margin-bottom: 32px;
 }
 
 .events-preview ul {
-  margin: 1em 0;
+  margin: 16px 0;
 }
 
 .events-preview li {
-  margin-bottom: 0.5em;
+  margin-bottom: 8px;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1em;
-  margin-top: 1em;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 .gallery-grid img {
@@ -133,7 +131,7 @@ footer {
   background: #333;
   color: #eee;
   text-align: center;
-  padding: 2em 0;
+  padding: 32px 0;
 }
 
 footer a {
