@@ -127,6 +127,11 @@ nav a.active {
   object-fit: cover;
 }
 
+.menu {
+  background-image: url('images/menuBackG.jpeg') center/cover no-repeat;
+  text-align: center; 
+}
+
 footer {
   background: #333;
   color: #eee;
