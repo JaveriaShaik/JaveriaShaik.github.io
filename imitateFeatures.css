@@ -43,25 +43,24 @@ body {
 
 .dinosaur {
   background-image: url('images/dinosaur.png');
-  filter: hue-rotate(213deg) saturate(155%);
+  filter: hue-rotate(179deg);;
 }
 
 .seagull {
   background-image: url('images/seagull.png');
+  filter: brightness(110%);
   box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
 }
 
 .butterfly {
   background-image: url('images/butterfly.jpg');
-  filter: hue-rotate(213deg) saturate(155%) brigthness(110%);
+  filter: invert(86%) brigthness(110%);
   border-radius: 113px 1px 94px 1px;
-  -webkit-border-radius: 113px 1px 94px 1px;
-  -moz-border-radius: 113px 1px 94px 1px;
 }
 
 .theater {
   background-image: url('images/theater_stage.jpg');
-  background-filter: brightness(80%) blur(2px);
+  background-filter: brightness(80%) blur(3px);
   color: white;
   font-size: 24px;
   font-weight: bold;
