@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -12,7 +6,6 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #5a3825;
 }
 
@@ -31,10 +24,6 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   padding: 1em 0;
-}
-
-.logo {
-  height: 50px;
 }
 
 nav ul {
@@ -125,6 +114,19 @@ nav a.active {
 
 .events-preview li {
   margin-bottom: 0.5em;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 footer {
