@@ -35,9 +35,8 @@ body {
 .football-field {
   background-image: url('images/football_field.jpg');
   filter: grayscale(100%);
-  border: solid 55px transparent; 
+  border: solid 55px white; 
   border-image: url('images/tic-tac-toe.png') 55 round;
-  box-shadow: 0 0 0 55px #fffdfc;
 }
 
 .dinosaur {
