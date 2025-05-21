@@ -25,36 +25,76 @@ body {
 }
 
 .penguins {
-  background-image: url('images/penguins.jpg');\
-  filter: grayscale(80%) brightness(200%);
-  border: 5px solid white;
-  border-radius: 50%;
-  padding: 0;
+  background-image: url('images/penguins.jpg');
+  filter: sepia(1) hue-rotate(-10deg) brightness(1.15) contrast(0.9) saturate(0.8); border-radius: 50% / 40%;
+
+    
+}
+
+.football-wrapper {
+  width: 300px;
+  height: auto;
+  transform: scale(0.393); /* scaled for 300px width */
+  transform-origin: top left;
+}
+
+.football-frame {
+  width: 764px;
+  height: 420px;
+  border: 55px solid transparent;
+  border-image: url('images/tic-tac-toe.png') 55 round;
+
+  outline: 10px solid white;
+  outline-offset: -10px;
+
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
 }
 
 .football-field {
+  width: 100%;
+  height: 100%;
   background-image: url('images/football_field.jpg');
-  filter: grayscale(100%);
-  border: solid 55px white; 
-  border-color: white;
-  border-image: url('images/tic-tac-toe.png') 55 round;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: grayscale(1) brightness(1.05) contrast(1.2);
+  border-radius: 4px;
 }
+
 
 .dinosaur {
   background-image: url('images/dinosaur.png');
-  filter: hue-rotate(185deg) saturate(170%) brightness(90%) contrast(110%);
+  width:200px;
+  filter: grayscale(1) sepia(1) hue-rotate(190deg) saturate(300%) brightness(1);
+  
 
 }
 
+.blue-dino {
+  filter: hue-rotate(160deg) saturate(300%) brightness(0.9);
+}
 .seagull {
-  position: relative;
-  background: linear-gradient(90deg, #9bc1f3 0%, #f3f5f6 80%);
+ 
+background: linear-gradient(to bottom right, #b5cfff, #ffffff); /* gradient like first image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   background-image: url('images/seagull.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  filter: brightness(1.1) contrast(1.2) saturate(1.5);
+  //box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  //filter: brightness(1.1) contrast(1.2) saturate(1.5);
+  filter: drop-shadow(0 0 10px rgba(100, 150, 255, 0.5)) brightness(1.1) saturate(1.2);
   overflow: hidden;
 }
 
@@ -64,9 +104,46 @@ body {
   border-radius: 113px 1px 94px 1px;
 }
 
-.theater {
+.theater-wrapper {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Blurred background — inherits dimensions */
+.theater-blur {
+  position: absolute;
+  inset: 0; /* shorthand for top: 0; right: 0; bottom: 0; left: 0; */
   background-image: url('images/theater_stage.jpg');
-  filter: brightness(80%) blur(2.5px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: blur(3px) brightness(0.8) saturate(0.9);
+  z-index: 1;
+}
+
+/* Clear centered text */
+.theater-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.theater1 {
+  background-image: url('images/theater_stage.jpg');
+  //filter: brightness(80%) blur(2.5px);
+  filter: blur(3px) brightness(0.8);
   color: white;
   font-size: 24px;
   font-weight: bold;
