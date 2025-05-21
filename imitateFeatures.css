@@ -27,14 +27,12 @@ body {
 .penguins {
   background-image: url('images/penguins.jpg');
   filter: sepia(1) hue-rotate(-10deg) brightness(1.15) contrast(0.9) saturate(0.8); border-radius: 50% / 40%;
-
-    
 }
 
 .football-wrapper {
   width: 300px;
   height: auto;
-  transform: scale(0.393); /* scaled for 300px width */
+  transform: scale(0.393); 
   transform-origin: top left;
 }
 
@@ -43,10 +41,8 @@ body {
   height: 420px;
   border: 55px solid transparent;
   border-image: url('images/tic-tac-toe.png') 55 round;
-
   outline: 10px solid white;
   outline-offset: -10px;
-
   border-radius: 12px;
   box-sizing: border-box;
   display: flex;
@@ -62,26 +58,22 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   filter: grayscale(1) brightness(1.05) contrast(1.2);
   border-radius: 4px;
 }
-
 
 .dinosaur {
   background-image: url('images/dinosaur.png');
   width:200px;
   filter: grayscale(1) sepia(1) hue-rotate(190deg) saturate(300%) brightness(1);
-  
-
 }
 
 .blue-dino {
   filter: hue-rotate(160deg) saturate(300%) brightness(0.9);
 }
+
 .seagull {
- 
-background: linear-gradient(to bottom right, #b5cfff, #ffffff); /* gradient like first image */
+background: linear-gradient(to bottom right, #b5cfff, #ffffff); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,7 +105,6 @@ background: linear-gradient(to bottom right, #b5cfff, #ffffff); /* gradient like
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Blurred background — inherits dimensions */
 .theater-blur {
   position: absolute;
   inset: 0; /* shorthand for top: 0; right: 0; bottom: 0; left: 0; */
@@ -126,7 +117,6 @@ background: linear-gradient(to bottom right, #b5cfff, #ffffff); /* gradient like
   z-index: 1;
 }
 
-/* Clear centered text */
 .theater-text {
   position: absolute;
   top: 50%;
